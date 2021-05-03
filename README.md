@@ -5,3 +5,11 @@
 
 ## 과제 제출 과정
 * [과제 제출 방법](https://github.com/next-step/nextstep-docs/tree/master/precourse)
+
+# 기능 목록 
+* [TDD] 자동차 이름 예외처리 함수 
+* [TDD] 자동차 이동 
+* 랜던값 구하기(0-9)
+* 랜던값에 따른 자동차 이동 
+    ** 랜덤값이 4이상이면 전진, 3이상이면 멈춤
+* 우승자 추출 

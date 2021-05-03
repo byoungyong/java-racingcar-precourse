@@ -17,7 +17,7 @@ public class CarTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"", "dsafsdfasdfasdf"})
+    @ValueSource(strings = {"", "testcar"})
     @DisplayName("이름 길이가 0 이하 또는 5 이상일 때 에러 확인")
     void 차_이름_5자(String name){
         assertThatThrownBy(() -> new Car(name))
