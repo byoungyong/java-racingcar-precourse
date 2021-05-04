@@ -16,7 +16,8 @@ public class WinnerTest {
     }
 
     @Test
-    void 우승자_한명(){
+    void 우승자_1명(){
+        String SINGLE_WINNER = "tube";
         List<Car> participants = cars.getCars();
 
 
@@ -27,7 +28,25 @@ public class WinnerTest {
         participants.get(1).tryMove(4);
         participants.get(1).tryMove(4);
 
-        assertThat(cars.decideWinner()).isEqualTo("byc");
+        assertThat(cars.decideWinner()).isEqualTo(SINGLE_WINNER);
+
+    }
+    @Test
+    void 우승자_2명(){
+        String DOUBLE_WINNER = "tube, byc";
+
+        List<Car> participants = cars.getCars();
+
+
+        participants.get(0).tryMove(4);
+        participants.get(0).tryMove(4);
+        participants.get(0).tryMove(4);
+
+        participants.get(1).tryMove(4);
+        participants.get(1).tryMove(4);
+        participants.get(1).tryMove(4);
+
+        assertThat(cars.decideWinner()).isEqualTo(DOUBLE_WINNER);
 
     }
 

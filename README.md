@@ -15,4 +15,4 @@
 * [X] [TDD] 자동차 다중 생성 테스트
 * [X] [TDD] 우승자 테스트 함수 생성
 * [X] view, turn  모델 생성
-* [] Production Code 구현 
+* [X] Production Code 구현 

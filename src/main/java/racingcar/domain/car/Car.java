@@ -8,7 +8,7 @@ public class Car implements Comparable<Car>{
 
     public Car(final String name){
         this.name = new Name(name);
-        this.position = new Position(0);
+        position = new Position(0);
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public class Car implements Comparable<Car>{
     }
 
     public boolean isEqualPosition(final Car car){
-        return position.equals(car.position);
+        return position.get() == car.getPosition();
     }
 
     @Override

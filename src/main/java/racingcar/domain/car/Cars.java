@@ -34,7 +34,7 @@ public class Cars {
 
         for (int i=0; i < cars.size(); i++){
             if (winnerCar.isEqualPosition(cars.get(i))){
-                winners.add(cars.get(0));
+                winners.add(cars.get(i));
             }
         }
 

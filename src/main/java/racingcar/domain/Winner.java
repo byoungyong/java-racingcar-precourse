@@ -21,7 +21,7 @@ public class Winner {
 
             stringBuilder.append(cars.get(i).getName());
 
-            if (i != 0 || i == cars.size()){
+            if (i != cars.size() -1){
                 stringBuilder.append(WINNER_DELIMITER);
             }
         }
