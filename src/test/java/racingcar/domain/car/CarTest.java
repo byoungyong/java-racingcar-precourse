@@ -7,12 +7,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import racingcar.domain.RandomUtil;
+//import racingcar.domain.RandomUtil;
 
 public class CarTest {
-
-    private Car car;
-
+    
     @Test
     public void nothing(){
 
